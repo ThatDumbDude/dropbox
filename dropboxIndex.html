@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sources/bootstrap.min.css">
     <link crossorigin="anonymous"
         href="https://cfl.dropboxstatic.com/static/metaserver/static/fonts/dig-fonts/sharp_grotesk_23/SharpGroteskDBCyrBook23-vflX-NIwB.woff2"
         as="font" rel="preload" type="font/woff2" />
@@ -43,16 +44,16 @@
     <div class="div1">
         <h2>Join over 700 million registered <br> users who trust Dropbox</h2>
         <p>Easy to use, reliable, private, and secure. It’s no wonder Dropbox is the choice for storing and sharing your
-            most important files.</p>
-        <button id="bb">Find your plan</button>
-        <video loop autoplay src="sources/video/Dropbox_Homepage.mp4" type="videos/mp4">Your browser does not support
+          <br>  most important files.</p>
+        <button id="bb" class="btn btn-primary mb-5">Find your plan</button>
+        <video loop autoplay src="sources/video/Dropbox_Homepage.mp4" type="videos/mp4" class="mb-5">Your browser does not support
             the video
             tag.</video>
 
         <h2 id="h2_1">See what sets Dropbox apart</h2>
         <div class="div1_2">
 
-            <div class="sub_div">
+            <div class="sub_div mt-4 container-fluid mb-4">
 
                 <div class="ccc">
                     <img src="sources/icons/smile.svg" alt="">
@@ -94,9 +95,9 @@
     </div>
 
     <div class=" div2">
-        <h2>A set of products to help you do more<h2>
-                <div class=" sub_div2">
-                    <div class="ccc">
+        <h2 class="mt-3 mb-3">A set of products to help you do more<h2>
+                <div class=" sub_div2 mt-4">
+                    <div class="ccc ps-5">
                         <img src="sources/icons/Dropbox.svg" alt="">
                         <h3 id="h3_2">Dropbox</h3>
                         <p>Securely store, organize, and share all your files.</p>
@@ -104,7 +105,7 @@
                     </div>
 
 
-                    <div class="ccc">
+                    <div class="ccc ps-5">
                         <img src="sources/icons/Sign.svg" alt="">
                         <h3 id="h3_2">Sign</h3>
                         <p>Streamline your document workflows with legally-binding eSignatures</p>
@@ -166,16 +167,16 @@
     <div class=" div3">
 
 
-        <h3>How will you use Dropbox?</h3>
+        <h3 class="mt-3 mb-4">How will you use Dropbox?</h3>
         <div class="div3_1">
             <div class="div3_1_1">
                 <img src="sources/images/work.png" alt="">
-                <h2>For Work</h2>
+                <h2 class="">For Work</h2>
                 <p>Work efficiently with teammates and clients, stay in sync on projects, and keep company data safe—all
                     in
                     one
                     place.</p>
-                <button>Get Dropbox for work</button>
+                <button class="btn btn-primary mb-5">Get Dropbox for work</button>
             </div>
 
 
@@ -186,38 +187,39 @@
                     files
                     in
                     the cloud, share photos and videos, and more</p>
-                <button>Get Dropbox for personal use</button>
+                <button class="btn btn-primary mb-5 mt-3">Get Dropbox for personal use</button>
 
 
             </div>
         </div>
 
-        <h2>Cloud storage you can count on</h2>
+        <h2 class="mb-5">Cloud storage you can count on</h2>
 
 
 
-        <div class="div3_2">
+        <div class="div3_2 container-fluid">
 
-            <div class="3_2_1">
+            <div class="div3_2_1">
+                
                 <img src="sources/icons/56.svg" alt="">
                 <h3>of Fortune 500 companies</h3>
-                <p>have at least one Dropbox team plan.</p>
+                <p>have at least one Dropbox team <br> plan.</p>
             </div>
 
 
-            <div class="3_2_1"> <img src="sources/icons/1b.svg" alt="">
+            <div class="div3_2_1"> <img src="sources/icons/1b.svg" alt="">
                 <h3>mobile app downloads</h3>
-                <p>with Editors’ Choice Awards from the Google Play and Apple App Store.</p>
+                <p>with Editors’ Choice Awards<br> from the Google Play and Apple <br> App Store.</p>
             </div>
 
-            <div class="3_2_1"> <img src="sources/icons/6000.svg" alt="">
+            <div class="div3_2_1"> <img src="sources/icons/6000.svg" alt="">
                 <h3>teams globally </h3>
-                <p>use Dropbox to share work, safeguard content, and grow their business</p>
+                <p>use Dropbox to share work,<br> safeguard content, and grow<br> their business</p>
             </div>
 
-            <div class="3_2_1"><img src="sources/icons/4.5b.svg" alt="">
+            <div class="div3_2_1"><img src="sources/icons/4.5b.svg" alt="">
                 <h3>connections and counting</h3>
-                <p>created through Dropbox file sharing.</p>
+                <p>created through Dropbox file<br> sharing.</p>
             </div>
 
 
@@ -230,17 +232,15 @@
 
 
 
-    <!-- <div class=" div4">
+    <div class=" div4">
         <h2>What else can Dropbox help you do?</h2>
-        <p>Dropbox brings everything—traditional files, cloud content, and web shortcuts—together in one place.</p>
-        <div >
-
-
-            <div class="div4_info">
+        <p id="nnn">Dropbox brings everything—traditional files, cloud content, and web shortcuts—together in one place.</p>
+        <div class="d-flex">
+            <div class="div4_info col-6 mt-3 ">
 
 
                 <div>
-                    <p>Get 2 GB of cloud storage for free with Dropbox Basic</p>
+                    <span>Get 2 GB of cloud storage for free with Dropbox Basic</span>
                     <p>Save and access your files from any device, and share them with anyone. Discover what Dropbox can
                         do
                         for
@@ -249,53 +249,48 @@
                 </div>
 
                 <div>
-                    <p>Dropbox Plus has room for all your content with space to spare</p>
+                    <span>Dropbox Plus has room for all your content with space to spare</span>
                     <p><img src="" alt=""></p>
                 </div>
 
                 <div>
-                    <p>Dropbox Family is a place for everyone with space for everything</p>
+                    <span>Dropbox Family is a place for everyone with space for everything</span>
                     <p></p>
                 </div>
 
                 <div>
-                    <p>
-                        Make life easier for you and your clients with Dropbox Professional</p>
+                    <span>
+                        Make life easier for you and your clients with Dropbox Professional</span>
                     <p></p>
                 </div>
 
                 <div>
-                    <p></p>
-                    <p></p>
-                </div>
-
-                <div>
-                    <p>
-                        Streamline your document workflow with Dropbox Sign</p>
+                    <span>
+                        Streamline your document workflow with Dropbox Sign</span>
                     <p></p>
                 </div>
                 <div>
-                    <p>
-                        Centralize, secure, and easily access your work with Dropbox Standard</p>
+                    <span>
+                        Centralize, secure, and easily access your work with Dropbox Standard</span>
                     <p></p>
                 </div>
                 <div>
-                    <p>DocSend lets you track, analyze, and optimize your content</p>
+                    <span>DocSend lets you track, analyze, and optimize your content</span>
                     <p></p>
                 </div>
                 <div>
-                    <p>Proactively detect threats to your team’s content with Dropbox Advanced</p>
+                    <span>Proactively detect threats to your team’s content with Dropbox Advanced</span>
                     <p></p>
                 </div>
 
             </div>
 
-            <div id="div4_img">
-                <img src="sources/images/div5.png" alt="">
+            <div class="div4_img bg-info">
+                <img src="sources/images/div5.png"  width="90%" alt="">
             </div>
 
         </div>
-    </div> -->
+    </div>
 
     <div class=" div5">
         <h2>Get more out of Dropbox by connecting with the tools you love</h2>
@@ -442,7 +437,7 @@
             <li>Find a partner</li>
         </ul>
     </footer>
-
+<script src="sources/bootstrap.min.js"></script>
 </body>
 
 </html>
