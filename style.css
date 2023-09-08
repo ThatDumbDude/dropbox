@@ -13,41 +13,32 @@ body {
 
 }
 
-
 nav {
-
   display: grid;
+  grid-template-columns: repeat(12, auto); /* Create a 12-column grid */
+  gap: 10px; /* Add a gap between grid items */
+  align-items: center; /* Vertically center the content */
   height: 48px;
-  grid-template-columns: repeat(13, 1fr);
+  background-color: #fff; /* Background color for the navigation bar */
+  padding: 0 10px; /* Add padding to the navigation bar */
 }
 
 nav span {
- color: #000000; 
-  align-self: center;
-
-}
-nav button{
-  height: 48px;
+  color: #000;
+  text-align: center; /* Center-align the text */
+  font-weight: bold; /* Add bold font to the text */
 }
 
-#navlogo {
-  height: 48px;
-  width: min-content;
-}
-
-#navtxt {
-  height: 22px;
-
-}
-
-button:hover{
-  background:#ffff;
-}
-
-
-button {
-  height: 40px;
+nav button {
   background: #0057E5;
+  color: #fff; /* Text color for the button */
+  border: none; /* Remove button border */
+  cursor: pointer; /* Add pointer cursor on hover */
+}
+
+nav button:hover {
+  background: #fff;
+  color: #0057E5; /* Invert colors on hover */
 }
 
 .div1 {
@@ -375,15 +366,35 @@ margin-bottom: 1rem;
   line-height: 24px;
 }
 
-.mms{
-  display: flex;
-  flex-direction: row;
+.mms {
   
 }
-.div5 div {
+.mbm{
   display: grid;
+}
+
+/* Style for the images (modify as needed) */
+.mms img {
+  max-height: 48px; /* Set a maximum width for the images */
+  margin-bottom: 10px; /* Add spacing below the image */
+}
+
+/* Style for the headings (modify as needed) */
+.mms h3 {
+  font-size: 18px; /* Adjust the font size */
+  margin-bottom: 5px; /* Add spacing below the heading */
+}
+
+/* Style for the paragraphs (modify as needed) */
+.mms p {
+  font-size: 14px; /* Adjust the font size */
+  margin-bottom: 10px; /* Add spacing below the paragraph */
+}
+
+.div5 div {
+  /* display: grid;
   grid-template-rows: repeat(2,auto);
-  grid-template-columns: repeat(4,auto);
+  grid-template-columns: repeat(4,auto); */
 }
 
 .div5 div img {
@@ -406,17 +417,24 @@ color: white;}
 .div6_1 {
   display: flex;
   flex-direction: row;
-  background: #9B0032;
+  background: #242121;
 }
 
 .div6_1 img {
   display: flex;
-  align-self: flex-start;
+ margin-left: 20rem;
+ width: 493.906px;
 }
-
-.div6_1 p {
+#aass{
+  margin-left: 6rem;
+}
+.div6_1 p{
   font-size: 24px;
   line-height: 28.8px;
+}
+.p22{
+  font-size: 14px !important;
+  font-weight: 600;
 }
 
 .div6_1 a {
@@ -427,14 +445,16 @@ color: white;}
 .div6_2 {
   display: flex;
   color: #fff;
-  justify-content: space-evenly;
+  
 }
 
 .div6_2 h2 {
-  font-size: 40px;
+  font-size: 32px;
   line-height: 44px;
   text-decoration: none;
   color: #fff;
+  margin-right: 12rem;
+  font-weight:  500;
 }
 
 .div6_2 button {
@@ -448,11 +468,15 @@ color: white;}
 footer {
   background-color: #000000;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 ul {
   display: flex;
   flex-direction: column;
+  margin-top: 6rem;
 
+}
+li{
+  list-style: none;
 }
